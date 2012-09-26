@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="app_name">PondyApp</string>
+    <string name="Home_menu1">Pondy News</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="Home_menu2">Pondy Weather</string>
+
+</resources>

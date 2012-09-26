@@ -37,19 +37,19 @@ public class EfficientAdapter extends BaseAdapter {
 		this.assetMgr = assetMgr;
 	}
 
-	@Override
+	
 	public int getCount() {
 		return data.toArray().length;
 
 	}
 
-	@Override
+	
 	public Object getItem(int position) {
 
 		return position;
 	}
 
-	@Override
+	
 	public long getItemId(int position) {
 
 		return position;
@@ -61,7 +61,7 @@ public class EfficientAdapter extends BaseAdapter {
 		public ImageView image;
 	}
 
-	@Override
+	
 	public View getView(int position, View convertView, ViewGroup parent) {
 		View vi = convertView;
 

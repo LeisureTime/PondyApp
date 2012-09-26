@@ -19,7 +19,7 @@ public class HomeActivity extends Activity {
         
         TextView t1 = (TextView) findViewById(R.id.textView1);        
         t1.setOnClickListener(new OnClickListener() {
-			@Override
+			
 			public void onClick(View v) {
 				Intent intent = new Intent(HomeActivity.this, NewsList.class);
 				startActivity(intent);
@@ -28,7 +28,7 @@ public class HomeActivity extends Activity {
         
         TextView t2 = (TextView) findViewById(R.id.textView2);        
         t2.setOnClickListener(new OnClickListener() {
-			@Override
+			
 			public void onClick(View v) {
 				Intent intent = new Intent(HomeActivity.this, NewsList.class);
 				startActivity(intent);

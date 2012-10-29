@@ -69,7 +69,7 @@ public class EfficientAdapter extends BaseAdapter {
 		} else
 			holder = (ViewHolder) vi.getTag();
 		
-		Typeface tf = Typeface.createFromAsset(this.assetMgr, "fonts/Akshar.ttf");    
+		Typeface tf = Typeface.createFromAsset(this.assetMgr, "fonts/Bamini.ttf");    
 		holder.label.setTypeface(tf);
 		holder.label.setText(data.get(position).getTitle());
 		holder.addr.setText(data.get(position).getPubDate());

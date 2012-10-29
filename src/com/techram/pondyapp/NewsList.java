@@ -48,10 +48,10 @@ public class NewsList extends Activity {
 			public void onItemClick(AdapterView<?> parent, View view,
 					int position, long id) {
 
-				Intent intent = new Intent(Intent.ACTION_VIEW).setData(Uri
+				/*Intent intent = new Intent(Intent.ACTION_VIEW).setData(Uri
 						.parse(PostList.get(position).getUrl()));
 				startActivity(intent);
-
+				*/
 			}
 		});
 

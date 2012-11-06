@@ -1,26 +1,25 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="match_parent" 
+    android:orientation="vertical"
+    android:gravity="center">
 
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="153dp"
-        android:padding="@dimen/padding_medium"
+
+
+
         android:text="@string/Home_menu1"
         tools:context=".HomeActivity" />
 
     <TextView  android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView1"
-        android:layout_below="@+id/textView1"
-        android:padding="@dimen/padding_medium"
+        android:paddingTop="10dp"
         android:text="@string/Home_menu2"
-        tools:context=".HomeActivity" />
+        />
 
-</RelativeLayout>
+</LinearLayout> 

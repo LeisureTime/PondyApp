@@ -26,7 +26,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
-
+import com.techram.R;
 public class NewsList extends Activity {
 	/** Called when the activity is first created. */
 	ListView lv1;

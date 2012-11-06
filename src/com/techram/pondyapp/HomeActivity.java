@@ -1,5 +1,5 @@
 package com.techram.pondyapp;
-
+import com.techram.R;
 
 
 import android.app.Activity;
@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.TextView;
 
+import com.techram.controller.ActivityWeatherSetting;
 public class HomeActivity extends Activity {
 
     @Override
@@ -30,7 +31,7 @@ public class HomeActivity extends Activity {
         t2.setOnClickListener(new OnClickListener() {
 			
 			public void onClick(View v) {
-				Intent intent = new Intent(HomeActivity.this, NewsList.class);
+				Intent intent = new Intent(HomeActivity.this, ActivityWeatherSetting.class);
 				startActivity(intent);
 			}
 		});

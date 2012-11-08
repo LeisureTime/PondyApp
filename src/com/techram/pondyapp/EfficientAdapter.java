@@ -3,21 +3,32 @@ package com.techram.pondyapp;
 
 import java.util.Calendar;
 import java.util.Date;
+import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import android.app.Activity;
 import android.content.Context;
 import android.content.res.AssetManager;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Typeface;
+import android.net.Uri;
 import android.text.format.DateFormat;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.koushikdutta.urlimageviewhelper.UrlImageViewHelper;
 import com.techram.R;
 public class EfficientAdapter extends BaseAdapter {
 	private Activity activity;
@@ -70,7 +81,7 @@ public class EfficientAdapter extends BaseAdapter {
 			holder = new ViewHolder();
 			holder.label = (TextView) vi.findViewById(R.id.title);
 			holder.addr = (TextView) vi.findViewById(R.id.details);
-			//holder.image = (ImageView) vi.findViewById(R.id.thumb);
+			holder.image = (ImageView) vi.findViewById(R.id.thumb);
 			vi.setTag(holder);
 		} else
 			holder = (ViewHolder) vi.getTag();
@@ -78,6 +89,13 @@ public class EfficientAdapter extends BaseAdapter {
 		Typeface tf = Typeface.createFromAsset(this.assetMgr, "fonts/Bamini.ttf");    
 		holder.label.setTypeface(tf);
 		holder.label.setText(this.convertTamil(data.get(position).getTitle().toString()));
+		Pattern p = Pattern.compile("<img[^>]*src=[\"|']([^(\"|')]+)[\"|'][^>]*>");
+		Matcher m = p.matcher(data.get(position).getThumbnail());
+		if(m.find()){
+			String url = m.group(1);
+			Log.i("URL", url);
+			UrlImageViewHelper.setUrlDrawable(holder.image, url);   
+		}
 		SimpleDateFormat formatter = new SimpleDateFormat("EEE, dd MMM yyyy HH:mm:ss zzz");
 		try {
 			Date date = (Date) formatter.parse(data.get(position).getPubDate());

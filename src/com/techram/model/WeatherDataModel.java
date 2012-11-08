@@ -20,7 +20,6 @@
 package com.techram.model;
 
 import org.w3c.dom.Document;
-import com.techram.controller.ActivityScreenLocation;
 import android.util.Log;
 
 /*******************************************************************************
@@ -132,6 +131,7 @@ public class WeatherDataModel {
 		
 		return yahooWeather;
 	}
+	
 	
 	
 	/***************************************************************************

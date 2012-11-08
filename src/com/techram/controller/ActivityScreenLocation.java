@@ -13,10 +13,9 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 
-
+import com.techram.R;
 import com.techram.model.WeatherDataModel;
 import com.techram.model.WeatherPreferences;
-import com.techram.R;
 
 
 public class ActivityScreenLocation extends Activity implements OnClickListener {
@@ -83,10 +82,47 @@ public class ActivityScreenLocation extends Activity implements OnClickListener 
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_setting_location);
+
+		boolean bResult = false;
+		bResult = initializeData();
+		if (bResult == true) {
+			//initializeView();
+		}
+
+		if (bResult == false) {
+			Log.e(TAG,"onCreate Error");
+		}
+		
 		/* Draw screen */
 		drawScreen();
 	}
+
 	
+
+	/***************************************************************************
+	 * Initilize data
+	 * @return
+	 * @date May 10, 2011
+	 * @time 8:50:09 PM
+	 * @author DatNQ
+	 **************************************************************************/
+	private boolean initializeData() {
+		boolean bResult = true;
+		
+		m_DataModel = WeatherDataModel.getInstance();
+		if (m_DataModel == null){
+			Log.e(TAG,"Init data failed");
+			return false;
+		}
+		
+		m_Preference = WeatherPreferences.getInstance(getApplicationContext());
+		if (m_Preference == null){
+			Log.e(TAG,"Can not get preference");
+			return false;
+		}
+
+		return bResult;
+	}
 
 	/***************************************************************************
 	 * Draw screen
@@ -108,9 +144,28 @@ public class ActivityScreenLocation extends Activity implements OnClickListener 
 	private void drawTitle() {
 	    setTitle(R.string.strSettingLocationTitle);
 	}
+
 	
-	
-	
+	/***************************************************************************
+	 * Create query by city and country
+	 * 
+	 * @return Query String
+	 * @date May 9, 2011
+	 * @time 8:02:29 AM
+	 * @author DatNQ
+	 **************************************************************************/
+	private String createQueryByCityCountry(){
+		StringBuffer strQuerryBuf = new StringBuffer();
+		
+		strQuerryBuf.append(m_Country.getText().toString().trim());
+
+		String strQuerryWOEID =  strQuerryBuf.toString().trim();
+		if (strQuerryWOEID != null){
+			strQuerryWOEID = strQuerryWOEID.replace(" ", "%20");
+		}
+		
+		return strQuerryWOEID;
+	}
 	
 	/***************************************************************************
 	 * Create query to get WOEID
@@ -155,5 +210,26 @@ public class ActivityScreenLocation extends Activity implements OnClickListener 
 		m_HandleRequest.sendMessage(regSearchLocation);
 	}
 	
+	/***************************************************************************
+	 * Get location finish
+	 * @date May 10, 2011
+	 * @time 8:54:23 PM
+	 * @author DatNQ
+	 **************************************************************************/
+	private void getLocationFinish(int nGetResult){
+		Intent changeResult = new Intent();
+		switch (nGetResult){
+		case LOCATION_OK:
+			setResult(RESULT_OK, changeResult);
+			break;
+			
+		case LOCATION_ERROR:
+		case LOCATION_GET_FAILED:
+		case LOCATION_NOWOEID:
+			setResult(RESULT_CANCELED, changeResult);
+			default:
+		}
 
+		finish();		
+	}
 }

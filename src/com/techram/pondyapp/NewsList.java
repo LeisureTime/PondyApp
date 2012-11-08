@@ -22,6 +22,7 @@ import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
@@ -120,7 +121,8 @@ public class NewsList extends Activity {
 
 		@Override
 		public void endElement(String uri, String localName, String qName)
-				throws SAXException {			
+				throws SAXException {	
+			//Log.i("Node:", localName);
 			if (localName.equalsIgnoreCase("title")
 					&& currentPost.getTitle() == null) {
 				currentPost.setTitle(chars.toString());
@@ -131,10 +133,9 @@ public class NewsList extends Activity {
 				currentPost.setPubDate(chars.toString());
 
 			}
-			if (localName.equalsIgnoreCase("thumbnail")
-					&& currentPost.getThumbnail() == null) {
+			if (localName.equalsIgnoreCase("encoded")
+					&& currentPost.getThumbnail() == null) {				
 				currentPost.setThumbnail(chars.toString());
-
 			}
 			if (localName.equalsIgnoreCase("link")
 					&& currentPost.getUrl() == null) {

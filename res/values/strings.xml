@@ -66,6 +66,7 @@
     <string name="temperature_unit">Temperature unit</string>
     <string name="context_menu_update_time">AutoUpdate</string>
     <string name="selectTemperatureUnit">Set your prefer unit</string>
-    <string name="selectTimeUpdate">Set auto-update time</string>    
+    <string name="selectTimeUpdate">Set auto-update time</string>
+    <string name="textview">TextView</string>    
         
 </resources>

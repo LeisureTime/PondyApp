@@ -433,7 +433,7 @@ public class ActivityWeatherSetting extends Activity {
     	    	
     	    	m_Preferneces.setTimeUpdate(nTime);
     	    	m_Alert.dismiss();
-    	    	updateWeatherInfo(m_WeatherInfo);
+    	    	updateDataOfCurrentLocation();
     	    }
     	});
     	
@@ -469,8 +469,7 @@ public class ActivityWeatherSetting extends Activity {
     	    	
     	    	m_Preferneces.setTempFmt(bIsC);
     	    	m_Alert.dismiss();
-    	    	notifyUpdateTime();
-    	    	updateWeatherInfo(m_WeatherInfo);
+    	    	updateDataOfCurrentLocation();
     	    }
     	});
     	m_Alert = builder.create();  

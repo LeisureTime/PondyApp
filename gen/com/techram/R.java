@@ -115,14 +115,13 @@ public final class R {
         public static final int btn_done=0x7f0a0025;
         public static final int checkbox=0x7f0a0024;
         public static final int dateTime=0x7f0a0013;
-        public static final int details=0x7f0a002b;
+        public static final int details=0x7f0a002d;
         public static final int flashlite=0x7f0a0021;
         public static final int flashlite_skill=0x7f0a0022;
         public static final int hintLocation=0x7f0a0005;
         public static final int humidityLayout=0x7f0a000d;
         public static final int humidityTitle=0x7f0a000e;
         public static final int humidityValue=0x7f0a000f;
-        public static final int icon=0x7f0a002c;
         public static final int img_ic=0x7f0a0032;
         public static final int inputCountry=0x7f0a0006;
         public static final int itemLabel=0x7f0a0014;
@@ -142,7 +141,8 @@ public final class R {
         public static final int temperature=0x7f0a000b;
         public static final int textView1=0x7f0a0000;
         public static final int textView2=0x7f0a0001;
-        public static final int title=0x7f0a002d;
+        public static final int thumb=0x7f0a002c;
+        public static final int title=0x7f0a002b;
         public static final int title_header=0x7f0a0003;
         public static final int visiLayout=0x7f0a0010;
         public static final int visiTitle=0x7f0a0011;
@@ -227,6 +227,7 @@ public final class R {
         public static final int str_visi=0x7f07001b;
         public static final int str_visi_fmt=0x7f07001f;
         public static final int temperature_unit=0x7f070029;
+        public static final int textview=0x7f07002d;
         /**  For context menu 
          */
         public static final int title_context_menu_setting=0x7f070026;

@@ -18,5 +18,7 @@
         android:paddingTop="10dp"
         android:text="@string/Home_menu2"
         />
+    
+    
 
 </LinearLayout> 

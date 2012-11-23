@@ -34,9 +34,9 @@
             </meta-data>
         </receiver>
 
-        <activity android:name=".pondyapp.NewsList"  android:label="@string/Home_menu1">
+        <activity android:name=".pondyapp.NewsList"  android:configChanges="keyboardHidden|orientation"  android:label="@string/Home_menu1">
         </activity>
-         <activity android:name=".pondyapp.WebActivity"  android:label="@string/Home_menu1">
+         <activity android:name=".pondyapp.WebActivity"  android:configChanges="keyboardHidden|orientation" android:label="@string/Home_menu1">
         </activity>
         <activity
             android:name=".controller.ActivityScreenLocation"

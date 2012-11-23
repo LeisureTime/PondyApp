@@ -486,7 +486,7 @@ public final class UrlImageViewHelper {
         final int targetWidth = tw <= 0 ? Integer.MAX_VALUE : tw;
         final int targetHeight = th <= 0 ? Integer.MAX_VALUE : th;
         final Loader loader = new Loader() {
-            @Override
+          
             public void run() {
                 try {
                     result = loadDrawableFromStream(context, url, filename, targetWidth, targetHeight);
@@ -497,7 +497,6 @@ public final class UrlImageViewHelper {
         };
 
         final Runnable completion = new Runnable() {
-            @Override
             public void run() {
                 Assert.assertEquals(Looper.myLooper(), Looper.getMainLooper());
                 Drawable usableResult = loader.result;
@@ -568,7 +567,7 @@ public final class UrlImageViewHelper {
     }
 
     private static UrlDownloader mDefaultDownloader = new UrlDownloader() {
-        @Override
+      
         public void download(final Context context, final String url, final String filename, final Runnable loader, final Runnable completion) {
             final AsyncTask<Void, Void, Void> downloader = new AsyncTask<Void, Void, Void>() {
                 @Override

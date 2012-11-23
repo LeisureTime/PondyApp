@@ -18,6 +18,7 @@ import android.content.res.AssetManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Typeface;
+import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.text.format.DateFormat;
 import android.util.Log;
@@ -89,14 +90,9 @@ public class EfficientAdapter extends BaseAdapter {
 		Typeface tf = Typeface.createFromAsset(this.assetMgr, "fonts/Bamini.ttf");    
 		holder.label.setTypeface(tf);
 		holder.label.setText(this.convertTamil(data.get(position).getTitle().toString()));
-		Pattern p = Pattern.compile("<img[^>]*src=[\"|']([^(\"|')]+)[\"|'][^>]*>");
-		Matcher m = p.matcher(data.get(position).getThumbnail());
-		if(m.find()){
-			String url = m.group(1);
-			Log.i("URL", url);
-			UrlImageViewHelper.setUrlDrawable(holder.image, url);   
-		}
+		UrlImageViewHelper.setUrlDrawable(holder.image, data.get(position).getThumbnail(),R.drawable.preloader);   
 		SimpleDateFormat formatter = new SimpleDateFormat("EEE, dd MMM yyyy HH:mm:ss zzz");
+		//Log.i("DESC", data.get(position).getDescription());
 		try {
 			Date date = (Date) formatter.parse(data.get(position).getPubDate());
 			Calendar calendar = Calendar.getInstance(); 

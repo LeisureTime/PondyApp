@@ -202,7 +202,7 @@ public class WeatherCustomDialog extends Dialog implements OnClickListener {
 		 * @time 5:58:19 PM
 		 * @author DatNQ
 		 **********************************************************************/
-		@Override
+
 		public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
 			m_Setting.setMyCvSetting(isChecked);
 		}
@@ -216,7 +216,7 @@ public class WeatherCustomDialog extends Dialog implements OnClickListener {
 	 * @time 5:58:44 PM
 	 * @author DatNQ
 	 ***************************************************************************/
-	@Override
+
 	public void onClick(View v) {
 		this.dismiss();
 	}

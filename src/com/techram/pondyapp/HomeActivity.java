@@ -9,10 +9,10 @@ import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.TextView;
-
+import com.google.ads.*;
 import com.techram.controller.ActivityWeatherSetting;
 public class HomeActivity extends Activity {
-
+	private AdView adView;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,6 +35,14 @@ public class HomeActivity extends Activity {
 				startActivity(intent);
 			}
 		});
+        
+        /*if (adView == null) {
+			adView = (AdView)this.findViewById(R.id.AdView);
+			adView.loadAd(new AdRequest());
+
+		} else {
+			adView.loadAd(new AdRequest());
+		}*/
     }
 
     @Override
@@ -42,6 +50,14 @@ public class HomeActivity extends Activity {
         getMenuInflater().inflate(R.menu.activity_home, menu);
         return true;
     }
+    /*
+    @Override
+   public void onDestroy() {
+      if (adView != null) {
+        adView.destroy();
+      }
+      super.onDestroy();
+    }*/
 
     
 }

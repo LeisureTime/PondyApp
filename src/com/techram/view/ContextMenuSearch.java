@@ -42,23 +42,7 @@ public class ContextMenuSearch extends ArrayAdapter<ContextMenuItem> {
 				.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 	}
 	
-	/*********************************************************
-	 * Inflate view of context menu item
-	 * @see android.widget.ArrayAdapter#getView(int, android.view.View, android.view.ViewGroup)
-	 * @author DatNQ
-	 *********************************************************/
-	@Override
-	public View getView(int position, View convertView, ViewGroup parent){
-		View view = convertView;
 
-		view = inflater.inflate(R.layout.activity_setting_location, null);
-		if (view == null){
-			Log.e(TAG, "WTF, why view is null?");
-		}
-			
-
-		return view;
-	}
 }
 /******************************************************************************
  * END OF FILE

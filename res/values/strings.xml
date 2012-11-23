@@ -1,11 +1,12 @@
 <resources>
     <!-- MSG:00001 Application name -->
-    <string name="app_name">PondyApp</string>
-    <string name="strSettingTitle">Weather Setting Screen</string>
+    <string name="app_name">Pondy News</string>
+    <string name="strSettingTitle">Pondicherry Weather</string>
     <string name="strSettingLocationTitle">Set Weather Location</string>
     <string name="Home_menu1">Pondicherry News</string>
     <string name="Home_menu2">Pondicherry Weather</string>
     <string name="menu_settings">Settings</string>
+     <string name="admobkey">a150a0ae5138d1d</string> <!-- Photo Fix key -->
     <!-- Activity weather setting -->
     <string name="str_user_agreement">USER AGREEMENT:\nTo continue use this demo
     application, you must agree with user agreement\n\nThis is demo product

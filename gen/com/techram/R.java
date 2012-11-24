@@ -11,231 +11,143 @@ public final class R {
     public static final class attr {
     }
     public static final class color {
-        public static final int color_black=0x7f050002;
-        public static final int color_white=0x7f050003;
+        public static final int color_black=0x7f040002;
+        public static final int color_white=0x7f040003;
         /**  Help Screen 
          */
-        public static final int custom_startup_color=0x7f050000;
-        public static final int green_focus=0x7f050004;
-        public static final int red_focus=0x7f050005;
-        public static final int title_Color=0x7f050001;
-        public static final int transparent=0x7f050006;
+        public static final int custom_startup_color=0x7f040000;
+        public static final int green_focus=0x7f040004;
+        public static final int red_focus=0x7f040005;
+        public static final int title_Color=0x7f040001;
+        public static final int transparent=0x7f040006;
     }
     public static final class dimen {
-        public static final int context_draw_padding=0x7f06000b;
-        public static final int context_font_size=0x7f06000c;
-        public static final int context_height=0x7f060009;
-        public static final int context_padding=0x7f06000a;
+        public static final int context_draw_padding=0x7f05000b;
+        public static final int context_font_size=0x7f05000c;
+        public static final int context_height=0x7f050009;
+        public static final int context_padding=0x7f05000a;
         /**  For context menu 
  Context menu 
          */
-        public static final int context_width=0x7f060008;
+        public static final int context_width=0x7f050008;
         /**  Custom dialog 
          */
-        public static final int custom_font_size=0x7f060000;
-        public static final int location_size=0x7f060005;
-        public static final int margin_space=0x7f060001;
-        public static final int padding_large=0x7f060011;
-        public static final int padding_medium=0x7f060010;
-        public static final int padding_small=0x7f06000f;
-        public static final int temperature_size=0x7f060004;
-        public static final int text_large=0x7f060002;
-        public static final int text_title=0x7f060003;
-        public static final int weather_size=0x7f060007;
-        public static final int weather_space=0x7f060006;
+        public static final int custom_font_size=0x7f050000;
+        public static final int location_size=0x7f050005;
+        public static final int margin_space=0x7f050001;
+        public static final int padding_large=0x7f050011;
+        public static final int padding_medium=0x7f050010;
+        public static final int padding_small=0x7f05000f;
+        public static final int temperature_size=0x7f050004;
+        public static final int text_large=0x7f050002;
+        public static final int text_title=0x7f050003;
+        public static final int weather_size=0x7f050007;
+        public static final int weather_space=0x7f050006;
         /**  For widget 
          */
-        public static final int widget_height=0x7f06000d;
-        public static final int widget_width=0x7f06000e;
+        public static final int widget_height=0x7f05000d;
+        public static final int widget_width=0x7f05000e;
     }
     public static final class drawable {
-        public static final int a0=0x7f020000;
-        public static final int a13=0x7f020001;
-        public static final int a17=0x7f020002;
-        public static final int a19=0x7f020003;
-        public static final int a2=0x7f020004;
-        public static final int a24=0x7f020005;
-        public static final int a25=0x7f020006;
-        public static final int a26=0x7f020007;
-        public static final int a27=0x7f020008;
-        public static final int a28=0x7f020009;
-        public static final int a29=0x7f02000a;
-        public static final int a30=0x7f02000b;
-        public static final int a31=0x7f02000c;
-        public static final int a32=0x7f02000d;
-        public static final int a3200=0x7f02000e;
-        public static final int a33=0x7f02000f;
-        public static final int a34=0x7f020010;
-        public static final int a35=0x7f020011;
-        public static final int a36=0x7f020012;
-        public static final int a41=0x7f020013;
-        public static final int a44=0x7f020014;
-        public static final int a45=0x7f020015;
-        public static final int a46=0x7f020016;
-        public static final int a5=0x7f020017;
-        public static final int a8=0x7f020018;
-        public static final int a9=0x7f020019;
-        public static final int android_ic=0x7f02001a;
-        public static final int app_icon=0x7f02001b;
-        public static final int background=0x7f02001c;
-        public static final int brew_nativec_ic=0x7f02001d;
-        public static final int custom_ic=0x7f02001e;
-        public static final int default_menu_item=0x7f02001f;
-        public static final int ic_action_search=0x7f020020;
-        public static final int ic_context_menu=0x7f020021;
-        public static final int ic_launcher=0x7f020022;
-        public static final int icon=0x7f020023;
-        public static final int icon_option_about=0x7f020024;
-        public static final int icon_option_setting=0x7f020025;
-        public static final int item_ic=0x7f020026;
-        public static final int location_ic=0x7f020027;
-        public static final int otherweather_ic=0x7f020028;
-        public static final int preloader=0x7f020029;
-        public static final int rightarrow=0x7f02002a;
-        public static final int suggest_icon=0x7f02002b;
-        public static final int temperature_ic=0x7f02002c;
-        public static final int update_time=0x7f02002d;
-        public static final int weather_background=0x7f02002e;
-        public static final int weather_hot_ic=0x7f02002f;
+        public static final int ic_action_search=0x7f020000;
+        public static final int ic_launcher=0x7f020001;
+        public static final int pondynewslogo=0x7f020002;
+        public static final int preloader=0x7f020003;
+        public static final int rightarrow=0x7f020004;
     }
     public static final class id {
-        public static final int AdView=0x7f0a000e;
-        public static final int LinearAd=0x7f0a000d;
-        public static final int OtherWeatherInfo=0x7f0a0005;
-        public static final int Title_TechnicalSkill=0x7f0a0014;
-        public static final int android=0x7f0a0016;
-        public static final int android_icon=0x7f0a0017;
-        public static final int android_skill=0x7f0a0018;
-        public static final int arrow=0x7f0a002a;
-        public static final int backBt=0x7f0a0021;
-        public static final int brew=0x7f0a0019;
-        public static final int brew_icon=0x7f0a001a;
-        public static final int brew_skill=0x7f0a001b;
-        public static final int btn_done=0x7f0a0020;
-        public static final int checkbox=0x7f0a001f;
-        public static final int content=0x7f0a0031;
-        public static final int dateTime=0x7f0a000c;
-        public static final int details=0x7f0a0029;
-        public static final int flashlite=0x7f0a001c;
-        public static final int flashlite_skill=0x7f0a001d;
-        public static final int humidityLayout=0x7f0a0006;
-        public static final int humidityTitle=0x7f0a0007;
-        public static final int humidityValue=0x7f0a0008;
-        public static final int img_ic=0x7f0a002e;
-        public static final int itemLabel=0x7f0a000f;
-        public static final int letter=0x7f0a001e;
-        public static final int listLayout=0x7f0a0024;
-        public static final int listView1=0x7f0a0025;
-        public static final int location=0x7f0a0002;
-        public static final int menu_setting=0x7f0a0033;
-        public static final int menu_settings=0x7f0a0032;
-        public static final int newsBreif=0x7f0a0023;
-        public static final int newsTitle=0x7f0a0022;
-        public static final int scrollLayout=0x7f0a0030;
-        public static final int scroll_view=0x7f0a0010;
-        public static final int summary=0x7f0a0015;
-        public static final int technical=0x7f0a0012;
-        public static final int technical_icon=0x7f0a0013;
-        public static final int technical_skill=0x7f0a0011;
-        public static final int tempe=0x7f0a002f;
-        public static final int temperature=0x7f0a0004;
-        public static final int textView1=0x7f0a0000;
-        public static final int textView2=0x7f0a0001;
-        public static final int thumb=0x7f0a0028;
-        public static final int title=0x7f0a0027;
-        public static final int visiLayout=0x7f0a0009;
-        public static final int visiTitle=0x7f0a000a;
-        public static final int visiValue=0x7f0a000b;
-        public static final int weather=0x7f0a002d;
-        public static final int weather_background=0x7f0a002c;
-        public static final int weather_icon=0x7f0a0003;
-        public static final int weather_widget=0x7f0a002b;
-        public static final int widget30=0x7f0a0026;
+        public static final int AdView=0x7f090002;
+        public static final int LinearAd=0x7f090001;
+        public static final int arrow=0x7f09000c;
+        public static final int backBt=0x7f090003;
+        public static final int content=0x7f09000e;
+        public static final int details=0x7f09000b;
+        public static final int listLayout=0x7f090006;
+        public static final int listView1=0x7f090007;
+        public static final int menu_settings=0x7f09000f;
+        public static final int newsBreif=0x7f090005;
+        public static final int newsTitle=0x7f090004;
+        public static final int rootRL=0x7f090000;
+        public static final int scrollLayout=0x7f09000d;
+        public static final int thumb=0x7f09000a;
+        public static final int title=0x7f090009;
+        public static final int widget30=0x7f090008;
     }
     public static final class layout {
         public static final int activity_home=0x7f030000;
-        public static final int activity_weather_setting=0x7f030001;
-        public static final int adview=0x7f030002;
-        public static final int boder=0x7f030003;
-        public static final int context_menu_layout=0x7f030004;
-        public static final int customdialog_layout=0x7f030005;
-        public static final int newsdetails=0x7f030006;
-        public static final int newslist=0x7f030007;
-        public static final int row=0x7f030008;
-        public static final int weather_selector=0x7f030009;
-        public static final int weather_widget_layout=0x7f03000a;
-        public static final int web=0x7f03000b;
+        public static final int adview=0x7f030001;
+        public static final int boder=0x7f030002;
+        public static final int newsdetails=0x7f030003;
+        public static final int newslist=0x7f030004;
+        public static final int row=0x7f030005;
+        public static final int web=0x7f030006;
     }
     public static final class menu {
-        public static final int activity_home=0x7f090000;
-        public static final int option_weather_screen=0x7f090001;
+        public static final int activity_home=0x7f080000;
     }
     public static final class string {
-        public static final int Home_menu1=0x7f070003;
-        public static final int Home_menu2=0x7f070004;
-        public static final int admobkey=0x7f070006;
+        public static final int Home_menu1=0x7f060003;
+        public static final int Home_menu2=0x7f060004;
+        public static final int admobkey=0x7f060006;
         /**  MSG:00001 Application name 
          */
-        public static final int app_name=0x7f070000;
-        public static final int context_menu_changeLocation=0x7f070029;
-        public static final int context_menu_update_time=0x7f07002b;
-        public static final int defalt_menu_name=0x7f070028;
-        public static final int menu_settings=0x7f070005;
+        public static final int app_name=0x7f060000;
+        public static final int context_menu_changeLocation=0x7f060029;
+        public static final int context_menu_update_time=0x7f06002b;
+        public static final int defalt_menu_name=0x7f060028;
+        public static final int menu_settings=0x7f060005;
         /**  Option menu 
          */
-        public static final int option_menu_about=0x7f070018;
-        public static final int option_menu_setting=0x7f070019;
-        public static final int selectTemperatureUnit=0x7f07002c;
-        public static final int selectTimeUpdate=0x7f07002d;
-        public static final int strFetchFailed=0x7f070024;
-        public static final int strFetchingData=0x7f070023;
-        public static final int strGetSuccess=0x7f070025;
-        public static final int strOnSearching=0x7f070021;
-        public static final int strOnUpdating=0x7f070022;
-        public static final int strSettingLocationTitle=0x7f070002;
-        public static final int strSettingTitle=0x7f070001;
-        public static final int strUpdating=0x7f070026;
-        public static final int str_address=0x7f07000f;
-        public static final int str_agree=0x7f070008;
-        public static final int str_author=0x7f07000c;
-        public static final int str_birthday=0x7f07000e;
+        public static final int option_menu_about=0x7f060018;
+        public static final int option_menu_setting=0x7f060019;
+        public static final int selectTemperatureUnit=0x7f06002c;
+        public static final int selectTimeUpdate=0x7f06002d;
+        public static final int strFetchFailed=0x7f060024;
+        public static final int strFetchingData=0x7f060023;
+        public static final int strGetSuccess=0x7f060025;
+        public static final int strOnSearching=0x7f060021;
+        public static final int strOnUpdating=0x7f060022;
+        public static final int strSettingLocationTitle=0x7f060002;
+        public static final int strSettingTitle=0x7f060001;
+        public static final int strUpdating=0x7f060026;
+        public static final int str_address=0x7f06000f;
+        public static final int str_agree=0x7f060008;
+        public static final int str_author=0x7f06000c;
+        public static final int str_birthday=0x7f06000e;
         /**  CV section 
          */
-        public static final int str_button_done=0x7f07000a;
-        public static final int str_cv_at_startup=0x7f07000b;
-        public static final int str_disagree=0x7f070009;
-        public static final int str_email=0x7f070011;
-        public static final int str_full_name=0x7f07000d;
-        public static final int str_humidity=0x7f07001b;
-        public static final int str_humidity_fmt=0x7f07001f;
-        public static final int str_mobile=0x7f070010;
-        public static final int str_no_data=0x7f07001a;
+        public static final int str_button_done=0x7f06000a;
+        public static final int str_cv_at_startup=0x7f06000b;
+        public static final int str_disagree=0x7f060009;
+        public static final int str_email=0x7f060011;
+        public static final int str_full_name=0x7f06000d;
+        public static final int str_humidity=0x7f06001b;
+        public static final int str_humidity_fmt=0x7f06001f;
+        public static final int str_mobile=0x7f060010;
+        public static final int str_no_data=0x7f06001a;
         /**  Technical skill 
          */
-        public static final int str_technical=0x7f070012;
-        public static final int str_technical_android=0x7f070014;
-        public static final int str_technical_brew=0x7f070015;
-        public static final int str_technical_flashlite=0x7f070016;
-        public static final int str_technical_letter=0x7f070017;
-        public static final int str_technical_outline=0x7f070013;
-        public static final int str_temperature_fmt=0x7f07001d;
-        public static final int str_temperature_fmt_f=0x7f07001e;
+        public static final int str_technical=0x7f060012;
+        public static final int str_technical_android=0x7f060014;
+        public static final int str_technical_brew=0x7f060015;
+        public static final int str_technical_flashlite=0x7f060016;
+        public static final int str_technical_letter=0x7f060017;
+        public static final int str_technical_outline=0x7f060013;
+        public static final int str_temperature_fmt=0x7f06001d;
+        public static final int str_temperature_fmt_f=0x7f06001e;
         /**  Photo Fix key 
  Activity weather setting 
          */
-        public static final int str_user_agreement=0x7f070007;
-        public static final int str_visi=0x7f07001c;
-        public static final int str_visi_fmt=0x7f070020;
-        public static final int temperature_unit=0x7f07002a;
-        public static final int textview=0x7f07002e;
+        public static final int str_user_agreement=0x7f060007;
+        public static final int str_visi=0x7f06001c;
+        public static final int str_visi_fmt=0x7f060020;
+        public static final int temperature_unit=0x7f06002a;
+        public static final int textview=0x7f06002e;
         /**  For context menu 
          */
-        public static final int title_context_menu_setting=0x7f070027;
+        public static final int title_context_menu_setting=0x7f060027;
     }
     public static final class style {
-        public static final int AppTheme=0x7f080000;
-    }
-    public static final class xml {
-        public static final int weather_provider=0x7f040000;
+        public static final int AppTheme=0x7f070000;
     }
 }

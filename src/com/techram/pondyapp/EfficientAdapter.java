@@ -91,13 +91,14 @@ public class EfficientAdapter extends BaseAdapter {
 		holder.label.setTypeface(tf);
 		holder.label.setText(this.convertTamil(data.get(position).getTitle().toString()));
 		UrlImageViewHelper.setUrlDrawable(holder.image, data.get(position).getThumbnail(),R.drawable.preloader);   
-		SimpleDateFormat formatter = new SimpleDateFormat("EEE, dd MMM yyyy HH:mm:ss zzz");
+		SimpleDateFormat formatter = new SimpleDateFormat("EEE, dd MMM yyyy HH:mm:ss");
 		//Log.i("DESC", data.get(position).getDescription());
 		try {
 			Date date = (Date) formatter.parse(data.get(position).getPubDate());
 			Calendar calendar = Calendar.getInstance(); 
 			calendar.setTime(date);
-			holder.addr.setText(date.getDate()+"/"+date.getMonth()+"/"+calendar.get(Calendar.YEAR) +"      "+date.getHours()+":"+date.getMinutes()+":"+date.getSeconds());
+			holder.addr.setText(new SimpleDateFormat("MMMM").format(date)+" "+calendar.get(Calendar.DAY_OF_MONTH)+","+calendar.get(Calendar.YEAR)+","+calendar.get(Calendar.HOUR_OF_DAY)+":"+calendar.get(Calendar.MINUTE)+" IST");
+			//holder.addr.setText(date.getDate()+"/"+date.getMonth()+"/"+calendar.get(Calendar.YEAR) +"      "+date.getHours()+":"+date.getMinutes()+":"+date.getSeconds());
 		} catch (ParseException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
